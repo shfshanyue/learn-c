@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-int main() {
+void print() {
   puts("hello, world");
+  return;
+}
+
+int main() {
+  print();
   return 0;
 }

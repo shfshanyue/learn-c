@@ -9,14 +9,14 @@ int main(){
   // socket()
   int sock = socket(AF_INET, SOCK_STREAM, 0);
 
-  struct sockaddr_in client_addr;
-  memset(&client_addr, 0, sizeof(client_addr));
-  client_addr.sin_family = AF_INET;
-  client_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
-  client_addr.sin_port = htons(22222);
+  // struct sockaddr_in client_addr;
+  // memset(&client_addr, 0, sizeof(client_addr));
+  // client_addr.sin_family = AF_INET;
+  // client_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+  // client_addr.sin_port = htons(22222);
 
   // bind()
-  bind(sock, (struct sockaddr *)&client_addr, sizeof(client_addr));
+  // bind(sock, (struct sockaddr *)&client_addr, sizeof(client_addr));
 
   // 准备 IP:PORT
   struct sockaddr_in serv_addr;
